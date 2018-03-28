@@ -1,0 +1,36 @@
+.navigationBar {
+    width: var(--containerLeft);
+    position: fixed;
+    min-height: 100%;
+    display: inline-block;
+}
+
+.logo {
+    text-align: center;
+    margin: 20% 10%;
+}
+
+.navigationBarCategory {
+    display: grid;
+    padding-left: 20%;
+    font-size: 1.1em;
+}
+
+.navBar-item-separate {
+    color: var(--black);
+    margin: 20% 0;
+    padding: 5% 0;
+}
+
+    .navBar-item-separate:hover {
+        background-color: darkgrey;
+    }
+
+.navBar-item {
+    color: var(--black);
+    padding: 5% 0;
+}
+
+    .navBar-item:hover {
+        background-color: darkgrey;
+    }
