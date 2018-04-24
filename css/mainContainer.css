@@ -1,3 +1,35 @@
 .mainContainer {
+    width: 100%;
     padding-left: var(--containerLeft);
+    background-color: var(--color-background);
+}
+
+.subContainer {
+    padding: 0 6% 0 2%;
+}
+
+.category {
+    display: none;
+}
+
+.category:target {
+    
+    display: block;
+}
+
+.category h1 {
+    font-size: 2em;
+    padding: 2% 0 1%;
+}
+
+.category > p > span {
+    font-weight: bold;
+}
+
+.category > p {
+    text-align: justify;
+    font-size: 0.9em;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 2%;
 }

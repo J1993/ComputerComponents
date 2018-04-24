@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/mainContainer.css">
         
         <!--Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         
     </head>
     
@@ -24,8 +24,8 @@
                 
                 <div class="navigationBarCategory">
                 
-                    <a href="#" class="navBar-item-separate">Home</a>
-                    <a href="#" class="navBar-item">Motheboard</a>
+                    <a href="#home" class="navBar-item-separate">Home</a>
+                    <a href="#motherboard" class="navBar-item">Motheboard</a>
                     <a href="#" class="navBar-item">Processor</a>
                     <a href="#" class="navBar-item">BIOS</a>
                     <a href="#" class="navBar-item">Power Supply</a>
@@ -44,17 +44,15 @@
                 <div class="subContainer">
                     
                     <!--HOME-->
-                    <div class="categoryHome">
+                    <div class="category" id="home">
 
-                        <h1 class="title">Home</h1>
+                        <h1>Home</h1>
 
-                        <p class="summary">This will be the summary of the web so It will appear a small resume of what you will see on here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non leo justo. Quisque lobortis at nulla vitae hendrerit. Fusce eget nisi sed felis aliquam feugiat. Vestibulum vestibulum nibh tristique massa finibus ultrices in quis quam. Praesent vel euismod augue. Cras tortor massa, convallis et metus id, dignissim condimentum ligula. Quisque facilisis, sem non convallis eleifend, metus ligula consequat enim, ut molestie mi enim non augue. Nulla hendrerit arcu justo, vel iaculis lectus ullamcorper eget. Nunc sodales nec eros nec vehicula. Quisque feugiat massa ut sagittis imperdiet.
-
-                        Nam in libero facilisis, feugiat nisi a, ultrices mi. Nam euismod euismod augue ac hendrerit. Donec cursus aliquam ullamcorper. Phasellus ornare tellus sit amet orci accumsan, eget dignissim enim semper. Nam venenatis ut lacus a gravida. Proin placerat lectus at neque tincidunt pellentesque. Proin at volutpat lacus, sit amet pellentesque tellus. Duis sodales tortor eu quam ultrices fermentum.</p>
+                        <p><span>Welcome to Computer Components. </span>This web page will help you to know all the components of a PC, what features has each one and where you can find it on the market. </p>
 
                         <div class="imageContainer">
 
-                            <img class="image" src="images/home.png"/>
+                            <img class="imageHome" src="images/home.png"/>
 
                         </div>
 
@@ -62,9 +60,11 @@
                     <!--END HOME-->
 
                     <!--MOTHERBOARD-->
-                    <div class="categoryMotherboard">
+                    <div class="category" id="motherboard">
 
-                        <h1 class="title">Motherboard</h1>
+                        <h1>Motherboard</h1>
+                        
+                        <p>This a description about</p>
 
                         <div class="subCategories">
 
@@ -74,15 +74,63 @@
 
                         </div>
 
-                        <div class="contentCategory"> <!--Encapsule all the content depending of what category is-->
+                        <!--Encapsule all the content depending of what subcategory is-->
+                        <div class="subCategoryContainer"> 
 
-                            <div class="motherboardContent">
+                            <!--ATX-->
+                            <div class="subcategory">
 
                                 <div class="content">
-                                    <h3 class="subcategoryTitle"></h3>
+                                    <h3>ATX</h3>
+                                    <p>Description about subcategory</p>
+                                    <h3>Features</h3>
+                                    <p>Features about this subcategory</p>
+                                </div>
+                                
+                                <div class="image">
+                                    <a href="#">&#60;</a>
+                                    <img src="images/home.png"/>
+                                    <a href="#">></a>
                                 </div>
 
                             </div>
+                            
+                            <!--Micro-ATX-->
+                            <div class="subcategory">
+
+                                <div class="content">
+                                    <h3>Micro-ATX</h3>
+                                    <p>Description about subcategory</p>
+                                    <h3>Features</h3>
+                                    <p>Features about this subcategory</p>
+                                </div>
+                                
+                                <div class="image">
+                                    <a href="#">&#60;</a>
+                                    <img src="images/home.png"/>
+                                    <a href="#">></a>
+                                </div>
+
+                            </div>
+                            
+                            <!--Mini-ATX-->
+                            <div class="subcategory">
+
+                                <div class="content">
+                                    <h3>Mini-ATX</h3>
+                                    <p>Description about subcategory</p>
+                                    <h3>Features</h3>
+                                    <p>Features about this subcategory</p>
+                                </div>
+                                
+                                <div class="image">
+                                    <a href="#">&#60;</a>
+                                    <img src="images/home.png"/>
+                                    <a href="#">></a>
+                                </div>
+
+                            </div>
+                            
 
                         </div>
 
@@ -95,8 +143,8 @@
             </div>
             
         </div>
-                
-                
-
+        <!--JavaScript-->
+        <script src="javascript/style.js"></script>
     </body>
+    <!--https://theme-fusion.com/wordpress-admin-area-explained/-->
 </html>

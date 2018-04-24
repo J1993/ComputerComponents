@@ -2,24 +2,26 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
     display: flex;
-    min-height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 :root {
-    --main-color:  #25274D;
-    --main-color-hover:  #464866;
-    --text-color: #AAABB8;
+    --main-light-color: #c1846a
+    --main-color:  #904214;
+    --dark-main-color: #2c3646;
+    /*--main-color-hover:  #464866;*/
+    --text-color: #ccc;
+    --color-background: #eee;
     
     /*Black and White*/
     --white: #ffffff;
     --black: #000000;
     
     /*Percentages*/
-    --containerLeft: 20%;
+    --containerLeft: 14%;
 }
