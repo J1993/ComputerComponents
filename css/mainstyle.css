@@ -11,12 +11,9 @@
 }
 
 :root {
-    --main-light-color: #c1846a
-    --main-color:  #904214;
-    --dark-main-color: #2c3646;
-    /*--main-color-hover:  #464866;*/
-    --text-color: #ccc;
-    --color-background: #eee;
+    --main-color: #904214;
+    --navBar-color: #282828;
+    --color-background: #f6f6f6;
     
     /*Black and White*/
     --white: #ffffff;

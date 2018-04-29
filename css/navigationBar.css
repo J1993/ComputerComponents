@@ -2,7 +2,7 @@
     width: var(--containerLeft);
     position: fixed;
     min-height: 100%;
-    background-color: var(--dark-main-color);
+    background-color: var(--navBar-color);
 }
 
 .logo {
@@ -16,20 +16,20 @@
 }
 
 .navBar-item-separate {
-    color: var(--text-color);
+    color: var(--white);
     margin: 20% 0;
     padding: 5% 2%;
 }
 
     .navBar-item-separate:hover {
-        border-left: 5px solid var(--main-color);
+        /*border-left: 5px solid #904214 ;*/
     }
 
 .navBar-item {
-    color: var(--text-color);
+    color: var(--white);
     padding: 5% 2%;
 }
 
     .navBar-item:hover {
-        border-left: 5px solid var(--main-color);
+        /*border-left: 5px solid #904214;*/
     }
