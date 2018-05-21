@@ -24,16 +24,22 @@
                 
                 <div class="navigationBarCategory">
                 
-                    <a href="#home" class="navBar-item-separate">Home</a>
-                    <a href="#motherboard" class="navBar-item">Motheboard</a>
-                    <a href="#" class="navBar-item">Processor</a>
-                    <a href="#" class="navBar-item">BIOS</a>
-                    <a href="#" class="navBar-item">Power Supply</a>
-                    <a href="#" class="navBar-item">Hard Drive</a>
-                    <a href="#" class="navBar-item">RAM</a>
-                    <a href="#" class="navBar-item">Specialized Cards</a>
-                    <a href="#" class="navBar-item-separate">Info and Contact</a>
+                    <a class="navBar-item-separate" onClick="displayCategory('home')"><img src="images/home.png">Home</a>
+                    <a class="navBar-item" onClick="displayCategory('motherboard')"><img src="images/motherboard.png">Motheboard</a>
+                    <a href="#" class="navBar-item"><img src="images/cpu.png">CPU</a>
+                    <a href="#" class="navBar-item"><img src="images/cooling-fan.png">CPU Cooler</a>
+                    <a href="#" class="navBar-item"><img src="images/power.png">Power Supply</a>
+                    <a href="#" class="navBar-item"><img src="images/hard-drive-device.png">Hard Drive</a>
+                    <a href="#" class="navBar-item"><img src="images/ram-memory.png">RAM</a>
+                    <a href="#" class="navBar-item"><img src="images/video-card.png">Video Cards</a>
+                    <a href="#" class="navBar-item-separate"><img src="images/info.png">Info and Contact</a>
                     
+                </div>
+
+                <div class="social">
+                    <a href="#"><img src="images/twitter-grey.png"></a>
+                    <a href="#"><img src="images/youtube-grey.png"></a>
+                    <a href="#"><img src="images/facebook-grey.png"></a>
                 </div>
                 
             </div>
@@ -63,74 +69,122 @@
                     <div class="category" id="motherboard">
 
                         <h1>Motherboard</h1>
-                        
-                        <p>This a description about</p>
 
-                        <div class="subCategories">
+                        <div class="summary">
 
-                            <a class="subCategory-item" href="#">ATX</a>
-                            <a class="subCategory-item" href="#">Micro-ATX</a>
-                            <a class="subCategory-item" href="#">Mini-ATX</a>
+                            <p>This element is the main printed circuit board (PCB) found in general
+                                purpose microcomputers and other expandable systems. 
+                                It holds and allows communication between many of the crucial 
+                                electronic components of a system, such as the central 
+                                processing unit (CPU) and memory, and provides connectors 
+                                for other peripherals. </p>
 
-                        </div>
+                            <div class="subCategories">
+
+                                <p>Categories</p>
+                                <a class="subCategory-item" onclick="displaySubcategory('atx')">ATX</a>
+                                <a class="subCategory-item" onclick="displaySubcategory('microAtx')">Micro-ATX</a>
+                                <a class="subCategory-item" onclick="displaySubcategory('miniAtx')">Mini-ATX</a>
+        
+                            </div>
+                            <div class="otherLinks">
+
+                                <p>Other Links</p>
+                                <a class="link-item" href="#">Link#1</a>
+                                <a class="link-item" href="#">Link#2</a>
+                                <a class="link-item" href="#">Link#3</a>
+    
+                            </div>
+                        </div>   
 
                         <!--Encapsule all the content depending of what subcategory is-->
-                        <div class="subCategoryContainer"> 
+                        <div class="subCategoryContainer">
 
                             <!--ATX-->
-                            <div class="subcategory">
+                            <div class="subcategory" id="atx">
 
                                 <div class="content">
-                                    <h3>ATX</h3>
-                                    <p>Description about subcategory</p>
-                                    <h3>Features</h3>
-                                    <p>Features about this subcategory</p>
+                                    <div class="contentSummary">
+                                        <h3>ATX</h3>
+                                        <p>Description about subcategory</p>
+                                    </div>
+
+                                    <div class="features">
+                                        <h3>Features</h3>
+                                        <p>Features about this subcategory</p>
+                                    </div>
+
                                 </div>
                                 
-                                <div class="image">
-                                    <a href="#">&#60;</a>
-                                    <img src="images/home.png"/>
-                                    <a href="#">></a>
+                                <div class="imageGallery">
+
+                                    <img src="images/full-atx.png"/>
+
+                                    <div class="imageControls">
+                                        <a href="#">&#60;</a>
+                                        <a href="#">></a>
+                                    </div>
+                                    
                                 </div>
 
                             </div>
                             
                             <!--Micro-ATX-->
-                            <div class="subcategory">
+                            <div class="subcategory" id="microAtx">
 
                                 <div class="content">
-                                    <h3>Micro-ATX</h3>
-                                    <p>Description about subcategory</p>
-                                    <h3>Features</h3>
-                                    <p>Features about this subcategory</p>
+                                    <div class="contentSummary">
+                                        <h3>Micro-ATX</h3>
+                                        <p>Description about subcategory</p>
+                                    </div>
+
+                                    <div class="features">
+                                        <h3>Features</h3>
+                                        <p>Features about this subcategory</p>
+                                    </div>
+                                    
                                 </div>
                                 
-                                <div class="image">
-                                    <a href="#">&#60;</a>
-                                    <img src="images/home.png"/>
-                                    <a href="#">></a>
+                                <div class="imageGallery">
+
+                                    <img src="images/micro-atx.png"/>
+
+                                    <div class="imageControls">
+                                        <a href="#">&#60;</a>
+                                        <a href="#">></a>
+                                    </div>
+                                    
                                 </div>
 
                             </div>
-                            
                             <!--Mini-ATX-->
-                            <div class="subcategory">
+                            <div class="subcategory" id="miniAtx">
 
                                 <div class="content">
-                                    <h3>Mini-ATX</h3>
-                                    <p>Description about subcategory</p>
-                                    <h3>Features</h3>
-                                    <p>Features about this subcategory</p>
-                                </div>
-                                
-                                <div class="image">
-                                    <a href="#">&#60;</a>
-                                    <img src="images/home.png"/>
-                                    <a href="#">></a>
-                                </div>
+                                        <div class="contentSummary">
+                                            <h3>Mini-ATX</h3>
+                                            <p>Description about subcategory</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            <p>Features about this subcategory</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/full-atx.png"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
 
                             </div>
-                            
 
                         </div>
 

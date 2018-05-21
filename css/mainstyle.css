@@ -6,12 +6,20 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
 .container {
     display: flex;
 }
 
 :root {
-    --main-color: #904214;
+    --mainColor: #904214;
     --navBar-color: #282828;
     --color-background: #f6f6f6;
     
@@ -21,4 +29,10 @@
     
     /*Percentages*/
     --containerLeft: 14%;
+
+    /*Font sizes*/
+    --navBar-font-size: 1em;
+    --titleSize: 1.2em;
+    --subtitleSize: 1em;
+    --textFontSize: 0.8em;
 }
