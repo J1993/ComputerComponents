@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/mainstyle.css">
         <link rel="stylesheet" href="css/navigationBar.css">
         <link rel="stylesheet" href="css/mainContainer.css">
+        <link rel="stylesheet" href="css/info.css">
         
         <!--Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -26,13 +27,13 @@
                 
                     <a class="navBar-item-separate" onClick="displayCategory('home')"><img src="images/home.png">Home</a>
                     <a class="navBar-item" onClick="displayCategory('motherboard')"><img src="images/motherboard.png">Motheboard</a>
-                    <a href="#" class="navBar-item"><img src="images/cpu.png">CPU</a>
-                    <a href="#" class="navBar-item"><img src="images/cooling-fan.png">CPU Cooler</a>
-                    <a href="#" class="navBar-item"><img src="images/power.png">Power Supply</a>
+                    <a class="navBar-item" onClick="displayCategory('cpu')"><img src="images/cpu.png">CPU</a>
+                    <a class="navBar-item" onClick="displayCategory('cpu-cooler')"><img src="images/cooling-fan.png">CPU Cooler</a>
+                    <a class="navBar-item" onClick="displayCategory('power-supply')"><img src="images/power.png">Power Supply</a>
                     <a href="#" class="navBar-item"><img src="images/hard-drive-device.png">Hard Drive</a>
                     <a href="#" class="navBar-item"><img src="images/ram-memory.png">RAM</a>
                     <a href="#" class="navBar-item"><img src="images/video-card.png">Video Cards</a>
-                    <a href="#" class="navBar-item-separate"><img src="images/info.png">Info and Contact</a>
+                    <a href="#" class="navBar-item-separate" onClick="displayCategory('info')"><img src="images/info.png">Info and Settings</a>
                     
                 </div>
 
@@ -65,7 +66,7 @@
                     </div>
                     <!--END HOME-->
 
-                    <!--MOTHERBOARD-->
+                    <!--MOTHERBOARD / DONE-->
                     <div class="category" id="motherboard">
 
                         <h1>Motherboard</h1>
@@ -90,7 +91,7 @@
                             <div class="otherLinks">
 
                                 <p>Other Links</p>
-                                <a class="link-item" href="#">Link#1</a>
+                                <a class="link-item" href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">Wikipedia</a>
                                 <a class="link-item" href="#">Link#2</a>
                                 <a class="link-item" href="#">Link#3</a>
     
@@ -106,12 +107,26 @@
                                 <div class="content">
                                     <div class="contentSummary">
                                         <h3>ATX</h3>
-                                        <p>Description about subcategory</p>
+                                        <p>ATX is an industry-wide specification for a desktop computer's motherboard. ATX improves the motherboard design by taking the small AT motherboard (sometimes known as the "Baby AT" or BAT) that was an earlier industry standard and rotating by 90 degrees the layout of the microprocessor and expansion slots.</p>
                                     </div>
 
                                     <div class="features">
                                         <h3>Features</h3>
-                                        <p>Features about this subcategory</p>
+                                        
+                                        <dl>
+                                            <dt>+Specifications:</dt>
+                                            <dd>  -  The standard is no larger than12 by 9.6 inches.</dd>
+                                            <dd>  -  Usuall, contains 2 to 4 slots of RAM.</dd>
+                                            <dd>  -  Onboard controllers for at least four drives.</dd>
+                                            <dd>  -  multiple expansion slots for video cards and other add-ons.</dd>
+                                            
+                                            <dt>+Advantages:</dt>
+                                            <dd>  -  It  includes advanced control facilities, where the BIOS program continually checks the CPU temperature and voltages, the cooling fans RPM, etc.</dd>
+                                            <dd>  -  It has a stacked I/O connector panel mounted on the motherboard.</dd>
+                                            <dd>  -  The socket has been placed a further distance from the expansion slots, allowing for long boards to be placed in easier.</dd>
+                                            <dd>  -  Relocation of the memory and the CPU allows for better ventilation and easier installation.</dd>
+                                            
+                                        </dl>
                                     </div>
 
                                 </div>
@@ -135,12 +150,26 @@
                                 <div class="content">
                                     <div class="contentSummary">
                                         <h3>Micro-ATX</h3>
-                                        <p>Description about subcategory</p>
+                                        <p>This is a motherboard that is 9.6" wide x 9.6" deep and capable of being as small as 6.75" wide x 6.75" deep. This motherboard was first introduced by Intel in December 1997 and is a smaller motherboard that can be used in either an ATX case or smaller computer case.</p>
                                     </div>
 
                                     <div class="features">
                                         <h3>Features</h3>
-                                        <p>Features about this subcategory</p>
+                                        
+                                        <dl>
+                                            <dt>+Specifications:</dt>
+                                            <dd>  -  The maximum size of a microATX motherboard is 9.6 × 9.6 in.</dd>
+                                            <dd>  -  Most budget MicroATX motherboards have two RAM slots.</dd>
+                                            <dd>  -  Modern mATX motherboards have at least four such connectors.</dd>
+                                            <dd>  -  Multiple expansion slots for video cards and other add-ons.</dd>
+                                            
+                                            <dt>+Advantages:</dt>
+                                            <dd>  -  Some people only have limited space so Micro-ATX is a good option when the space is a need.</dd>
+                                            <dd>  -  Cheaper than full-ATX.</dd>
+                                            <dd>  -  can capitalize on the benefits of a reduction in total system costs.</dd>
+                                            <dd>  -  More I/O space at the rear and reduced emissions from using integrated I/O connectors..</dd>
+                                            
+                                        </dl>
                                     </div>
                                     
                                 </div>
@@ -157,6 +186,7 @@
                                 </div>
 
                             </div>
+                            
                             <!--Mini-ATX-->
                             <div class="subcategory" id="miniAtx">
 
@@ -168,14 +198,27 @@
     
                                         <div class="features">
                                             <h3>Features</h3>
-                                            <p>Features about this subcategory</p>
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  The maximum size of a microATX motherboard is 9.6 × 9.6 in.</dd>
+                                                <dd>  -  Most budget MicroATX motherboards have two RAM slots.</dd>
+                                                <dd>  -  Modern mATX motherboards have at least four such connectors.</dd>
+                                                <dd>  -  Multiple expansion slots for video cards and other add-ons.</dd>
+
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  Some people only have limited space so Micro-ATX is a good option when the space is a need.</dd>
+                                                <dd>  -  Cheaper than full-ATX.</dd>
+                                                <dd>  -  can capitalize on the benefits of a reduction in total system costs.</dd>
+                                                <dd>  -  More I/O space at the rear and reduced emissions from using integrated I/O connectors..</dd>
+
+                                            </dl>
                                         </div>
                                         
                                     </div>
                                     
                                     <div class="imageGallery">
     
-                                        <img src="images/full-atx.png"/>
+                                        <img src="images/mini-atx.png"/>
     
                                         <div class="imageControls">
                                             <a href="#">&#60;</a>
@@ -190,6 +233,459 @@
 
                     </div>
                     <!--END MOTHERBOARD-->
+
+                    <!--CPU-->
+                    <div class="category" id="cpu">
+
+                        <h1>CPU</h1>
+
+                        <div class="summary">
+
+                            <p>The processor, better known as CPU (Central Processing Unit) is the unit that inteprets 
+                                the instructions of a comouter program, performing basic, logical and I/O arithmetic operations
+                                of the system. A PC can have more than one CPU, this common called microprocessing. Some 
+                                integrated circuits can have many CPU in one chip, which are called multicore. Two components of 
+                                a CPU are the arithmetic logic unit (ALU) that performs arithmetic and logic operations and the 
+                                control unit (CU), which extracts instructions from memory, decodes and executes them, calling the 
+                                ALU when necessary. The fundamental operation of most CPU's is to execute a sequence of stored 
+                                instructions called "program". The program is represented by a series of numbers that are maintained 
+                                in a certain kind of computer memory. There are four steps that almost all CPUs use in their 
+                                operation: fetch, decode, execute, and writeback.</p>
+
+                            <div class="subCategories">
+
+                                <p>Categories</p>
+                                <a class="subCategory-item" onclick="displaySubcategory('i3')">Intel i3</a>
+                                <a class="subCategory-item" onclick="displaySubcategory('i5')">Intel i5</a>
+                                <a class="subCategory-item" onclick="displaySubcategory('i7')">Intel i7</a>
+        
+                            </div>
+                            <div class="otherLinks">
+
+                                <p>Other Links</p>
+                                <a class="link-item" href="#" target="_blank">Wikipedia</a>
+                                <a class="link-item" href="#">Link#2</a>
+                                <a class="link-item" href="#">Link#3</a>
+    
+                            </div>
+                        </div>   
+
+                        <!--Encapsule all the content depending of what subcategory is-->
+                        <div class="subCategoryContainer">
+
+                            <!--Intel i3-->
+                            <div class="subcategory" id="i3">
+
+                                <div class="content">
+                                    <div class="contentSummary">
+                                        <h3>Intel Core i3</h3>
+                                        <p>Intel Core i3 is a microprocessor from Intel, introduced on 4 January 2010. 
+                                            The processor is the successor to the Intel Core 2 series and complements the Core i5 
+                                            and Core i7 that have already been released. The processor has a built-in graphics 
+                                            processor (GPU) and contains two processor cores.</p>
+                                    </div>
+
+                                    <div class="features">
+                                        <h3>Features</h3>
+                                        
+                                        <dl>
+                                            <dt>+Specifications:</dt>
+                                            <dd>  -  The standard is no larger than12 by 9.6 inches.</dd>
+                                            <dd>  -  Usuall, contains 2 to 4 slots of RAM.</dd>
+                                            <dd>  -  Onboard controllers for at least four drives.</dd>
+                                            <dd>  -  multiple expansion slots for video cards and other add-ons.</dd>
+                                            
+                                            <dt>+Advantages:</dt>
+                                            <dd>  -  It can perform hyperthreading.</dd>
+                                            <dd>  -  Multi-taks</dd>
+                                            <dd>  -  Available for use in both desktop and laptop computers.</dd>
+                                            <dd>  -  Available in multiple speeds, ranging from 1.30 GHz up to 3.50 GHz.</dd>
+                                            <dd>  -  It utilizes either the LGA 1150 or LGA 1155 socket on a motherboard.</dd>
+                                            <dd>  -  A select few high-end Core i3 processors are quad core, featuring four cores.</dd>
+                                            
+                                        </dl>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="imageGallery">
+
+                                    <img src="images/i3-processor.png"/>
+
+                                    <div class="imageControls">
+                                        <a href="#">&#60;</a>
+                                        <a href="#">></a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <!--Intel i5-->
+                            <div class="subcategory" id="i5">
+
+                                <div class="content">
+                                    <div class="contentSummary">
+                                        <h3>Intel Core i5</h3>
+                                        <p>A family of dual and quad core, 64-bit, x86 CPUs from Intel, 
+                                            introduced in 2009. The Core i5 chips are the midrange CPUs in the Core "i" line
+                                            between the entry-level i3 and the high-performance i7 series. Certain models of 
+                                            the i5 family include the Turbo Boost feature</p>
+                                    </div>
+
+                                    <div class="features">
+                                        <h3>Features</h3>
+                                        
+                                        <dl>
+                                            <dt>+Specifications:</dt>
+                                            <dd>  -  Multiple speeds, ranging from 1.90 GHz up to 3.80 GHz.</dd>
+                                            <dd>  -  It features 3 MB, 4 MB or 6 MB of cache.</dd>
+                                            <dd>  -  It utilizes either the LGA 1150 or LGA 1155 socket on a motherboard.</dd>
+                                            
+                                            <dt>+Advantages:</dt>
+                                            <dd>  -  The most common type of RAM used with a Core i5 processor is DDR3 1333 or DDR3 1600, 
+                                                however, higher performance RAM can be used as well (if the motherboard supports it).</dd>
+                                            <dd>  -  Some laptop computers feature Core i5 processors as well, to provide improved performance for heavier usage needs.</dd>
+                                            <dd>  -  At the lower speeds, battery usage is pretty conservative and can reach up to five hours or usage on a single charge.</dd>
+                                            
+                                        </dl>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="imageGallery">
+
+                                    <img src="images/i5-processor.png"/>
+
+                                    <div class="imageControls">
+                                        <a href="#">&#60;</a>
+                                        <a href="#">></a>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            
+                            <!--Intel i7-->
+                            <div class="subcategory" id="i7">
+
+                                <div class="content">
+                                        <div class="contentSummary">
+                                            <h3>Intel Core i7</h3>
+                                            <p>The Intel i7 processor is Intel's top end processor, with several variations 
+                                                available. The i7 processor is available for both desktop computers and laptop
+                                                computers, available in many different gigahertz speeds and several socket types. 
+                                                There have also been several generations of the i7 processor released as well. 
+                                                Whatever the needs of the user are, an i7 processor is available to meet those needs.</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  Integrate 4 Cores (latest Core i7 processor incorporate 6 cores)</dd>
+                                                <dd>  -  Speed ranges from 2.66GHz to 3.33GHz.</dd>
+                                                <dd>  -  Support DDR3 main memory.</dd>
+                                                <dd>  -  Support Hyper-threading technology</dd>
+
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  i5 processors are available in speeds as low as 1.07 GHz and as high as 3.6 GHz.</dd>
+                                                <dd>  -  The i7 ranges from 4-10 cores based on the model.</dd>
+                                                <dd>  -  core i7 family processors were the best particularly for extreme 3D gaming, 
+                                                    intensive graphics tasks, multimedia production in standard computer level.</dd>
+                                                <dd>  -  More I/O space at the rear and reduced emissions from using integrated I/O connectors..</dd>
+
+                                            </dl>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/i7-processor.png"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--END CPU-->
+
+                    <!--CPU-COOLER-->
+                    <div class="category" id="cpu-cooler">
+
+                            <h1>CPU Cooler</h1>
+    
+                            <div class="summary">
+    
+                                <p>Computer cooling is required to remove the waste heat produced by 
+                                    computer components, to keep components within permissible operating 
+                                    temperature limits. Components that are susceptible to temporary 
+                                    malfunction or permanent failure if overheated include integrated circuits 
+                                    such as Central processing units (CPUs), chipset, graphics cards, and hard disk drives.
+                                    <br><br>
+                                    Components are often designed to generate as little heat as possible, and computers 
+                                    and operating systems may be designed to reduce power consumption and consequent heating 
+                                    according to workload, but more heat may still be produced than can be removed without attention 
+                                    to cooling.</p>
+    
+                                <div class="subCategories">
+    
+                                    <p>Categories</p>
+                                    <a class="subCategory-item" onclick="displaySubcategory('air')">Air cooling</a>
+                                    <a class="subCategory-item" onclick="displaySubcategory('liquid')">Liquid cooling</a>
+            
+                                </div>
+                                <div class="otherLinks">
+    
+                                    <p>Other Links</p>
+                                    <a class="link-item" href="#" target="_blank">Wikipedia</a>
+                                    <a class="link-item" href="#">Link#2</a>
+                                    <a class="link-item" href="#">Link#3</a>
+        
+                                </div>
+                            </div>   
+    
+                            <!--Encapsule all the content depending of what subcategory is-->
+                            <div class="subCategoryContainer">
+    
+                                <!--Air-->
+                                <div class="subcategory" id="air">
+    
+                                    <div class="content">
+                                        <div class="contentSummary">
+                                            <h3>Air Cooler</h3>
+                                            <p>Air cooling is a standard method of system cooling used to method of dissipate heat. 
+                                                The object being cooled will have a flow of air moving over its surface. 
+                                                Most air cooling systems use a combination of fans and heat sinks, which exchanges 
+                                                heat with air.</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  The structure is composed by a fan and a heatsink.</dd>
+                                                <dd>  -  Heatsinks are usually made of a metal with high thermal conductivity such as aluminium or copper.</dd>
+                                                <dd>  -  Fan sizes include 40, 60, 80, 92, 120, and 140 mm.</dd>
+                                                
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  If you use a CPU cooler, the fan can contribute a small amount to airflow.</dd>
+                                                <dd>  -  Less equipment involved.</dd>
+                                                <dd>  -  Easy mechanism.</dd>
+                                                <dd>  -  No extra power required.</dd>
+                                                
+                                            </dl>
+                                        </div>
+    
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/air-cooler.png"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+                                
+                                <!--Liquid-->
+                                <div class="subcategory" id="liquid">
+    
+                                    <div class="content">
+                                        <div class="contentSummary">
+                                            <h3>Liquid cooling</h3>
+                                            <p>Liquid cooling is a highly effective method of removing excess heat, 
+                                                with the most common heat transfer fluid in desktop PCs being (distilled) water. 
+                                                The advantages of water cooling over air cooling include water's higher specific 
+                                                heat capacity and thermal conductivity.</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  It is compose by a radiator, a fan, coolant liquid and the reservoir.</dd>
+                                                <dd>  -  The heigth can be from 120mm to 360mm.</dd>
+                                                <dd>  -  Supports any type of socket.</dd>
+                                                
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  Less clutter and more space.</dd>
+                                                <dd>  -  Noise-free PC operation.</dd>
+                                                <dd>  -  Better overclocking potential.</dd>
+                                                
+                                            </dl>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/liquid-cooler.png"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                    </div>
+                    <!--END CPU-COOLER-->
+
+                    <!--POWER SUPPLY-->
+                    <div class="category" id="power-supply">
+
+                            <h1>Power Supply</h1>
+    
+                            <div class="summary">
+    
+                                <p>A power supply unit (or PSU) converts mains AC to low-voltage regulated DC 
+                                    power for the internal components of a computer. Modern personal computers 
+                                    universally use switched-mode power supplies. Some power supplies have a manual 
+                                    switch for selecting input voltage, while others automatically adapt to the mains voltage.</p>
+    
+                                <div class="subCategories">
+    
+                                    <p>Categories</p>
+                                    <a class="subCategory-item" onclick="displaySubcategory('modular')">Modular</a>
+                                    <a class="subCategory-item" onclick="displaySubcategory('non-modular')">Non modular</a>
+            
+                                </div>
+                                <div class="otherLinks">
+    
+                                    <p>Other Links</p>
+                                    <a class="link-item" href="#" target="_blank">Efficiency</a>
+                                    <a class="link-item" href="#">Link#2</a>
+                                    <a class="link-item" href="#">Link#3</a>
+        
+                                </div>
+                            </div>   
+    
+                            <!--Encapsule all the content depending of what subcategory is-->
+                            <div class="subCategoryContainer">
+    
+                                <!--Modular-->
+                                <div class="subcategory" id="modular">
+    
+                                    <div class="content">
+                                        <div class="contentSummary">
+                                            <h3>Full modular</h3>
+                                            <p>Comes with no cables pre-attached. You only attach the ones you need.
+                                                It is more expensive, but also gives you more options, allowing you to only 
+                                                install the cables you need and keep airflow and cable management to a maximum. 
+                                                All newer generation HALE PSUs are fully modular..</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  The structure is composed by a fan and a heatsink.</dd>
+                                                <dd>  -  Heatsinks are usually made of a metal with high thermal conductivity such as aluminium or copper.</dd>
+                                                <dd>  -  Fan sizes include 40, 60, 80, 92, 120, and 140 mm.</dd>
+                                                
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  Offers the ability to remove unused connections.</dd>
+                                                <dd>  -  This reduces clutter.</dd>
+                                                <dd>  -  Removes the risk of dangling cables interfering with other components.</dd>
+                                                <dd>  -  It can improve case airflow.</dd>
+                                                
+                                            </dl>
+                                        </div>
+    
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/modular-power-supply.png"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+                                
+                                <!--Non modular-->
+                                <div class="subcategory" id="non-modular">
+    
+                                    <div class="content">
+                                        <div class="contentSummary">
+                                            <h3>Non modular </h3>
+                                            <p>Liquid cooling is a highly effective method of removing excess heat, 
+                                                with the most common heat transfer fluid in desktop PCs being (distilled) water. 
+                                                The advantages of water cooling over air cooling include water's higher specific 
+                                                heat capacity and thermal conductivity.</p>
+                                        </div>
+    
+                                        <div class="features">
+                                            <h3>Features</h3>
+                                            
+                                            <dl>
+                                                <dt>+Specifications:</dt>
+                                                <dd>  -  It is compose by a radiator, a fan, coolant liquid and the reservoir.</dd>
+                                                <dd>  -  The heigth can be from 120mm to 360mm.</dd>
+                                                <dd>  -  Supports any type of socket.</dd>
+                                                
+                                                <dt>+Advantages:</dt>
+                                                <dd>  -  Less clutter and more space.</dd>
+                                                <dd>  -  Noise-free PC operation.</dd>
+                                                <dd>  -  Better overclocking potential.</dd>
+                                                
+                                            </dl>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="imageGallery">
+    
+                                        <img src="images/non-modular-power-supply.jpg"/>
+    
+                                        <div class="imageControls">
+                                            <a href="#">&#60;</a>
+                                            <a href="#">></a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                    </div>
+                    <!--END POWER SUPPLY-->
+                    
+                    <!--INFO & CONTACT-->
+                    <div class="category" id="info">
+                        <h1>Info and Contact</h1>
+                        
+                        <div class="tools">
+                            <input type="color" id="colourPallete">
+                            <button type="button" id="button1" onclick="getTheColour()">Save</button>
+                        </div>
+                    </div>
+                    <!--END INFO & CONTACT-->
                     
                     
                 </div>
@@ -197,6 +693,7 @@
             </div>
             
         </div>
+
         <!--JavaScript-->
         <script src="javascript/style.js"></script>
     </body>

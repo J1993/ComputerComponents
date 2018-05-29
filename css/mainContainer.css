@@ -32,6 +32,10 @@
     margin-right: 3%;
 }
 
+.summary > div > p {
+    font-weight: bold;
+    margin-bottom: 2%;
+}
 .summary > div > a {
     display: block;
     color: var(--mainColor);
@@ -40,6 +44,7 @@
 .summary > div > a:hover {
     text-decoration: underline;
 }
+
 
 /*SUBCATEGORY*/
 
@@ -77,6 +82,16 @@
     border: 0.9px solid var(--mainColor);
     border-radius: 5px;
     background-color: var(--white);
+}
+
+.features > dl {
+    padding:  2% 0;
+    font-size: var(--textFontSize);
+}
+
+.features > dl > dt {
+    font-weight: bold;
+    margin: 1% 0;
 }
 
 .imageGallery {
